@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temprature Conveter || all</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 2rem;
+        font-family: "Courier New", Courier, monospace;
+        position: relative;
+      }
+      h1 {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 3.5rem;
+        text-align: center;
+        color: #fff;
+        padding-top: 5rem;
+      }
+      input {
+        background: transparent;
+        padding: 1.5rem 1rem;
+        border-radius: 10px;
+        font-size: 1.25rem;
+      }
+      input:focus {
+        outline: 4px solid #3dace3;
+        outline-offset: 2px;
+      }
+      label {
+        line-height: 5rem;
+      }
+      form {
+        position: absolute;
+        background: #fff;
+        width: 75vw;
+        display: flex;
+        margin: auto;
+        border-radius: 10px;
+        justify-content: space-around;
+        padding: 5rem;
+        left: -25%;
+        top: 65%;
+        transform: translate(50%, 50%);
+      }
+      .first {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 33.33vw;
+        background: #3de3c0;
+        z-index: -1;
+      }
+      .second {
+        position: absolute;
+        top: 0;
+        left: 33.33%;
+        height: 100vh;
+        width: 33.33vw;
+        background: #3dace3;
+        z-index: -1;
+      }
+      .third {
+        position: absolute;
+        top: 0;
+        left: 66.66%;
+        height: 100vh;
+        width: 33.33vw;
+        background: #448ffd;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Temprature convert in other units</h1>
+    <div class="first"></div>
+    <div class="second"></div>
+    <div class="third"></div>
+    <form>
+      <div>
+        <label for="celsius">Celsius</label><br />
+        <input type="text" name="celsius" id="celsius" />
+      </div>
+      <div>
+        <label for="kelvin">Kelvin</label><br />
+        <input type="text" name="kelvin" id="kelvin" />
+      </div>
+      <div>
+        <label for="fahrenheit">Fahrenheit</label><br />
+        <input type="text" name="fahrenheit" id="fahrenheit" />
+      </div>
+    </form>
+    <script src="convert_logic.js"></script>
+  </body>
+</html>
