@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+/* variables */
+:root {
+  --primary-color: #ded4cb;
+  --dark-color: #0e1010;
+  --light-primary-color: #d9c4b0;
+  --dark-light-primary-color: #a7a29b;
+  --dark-primary-color: #5e605b;
+  --brown-color: #a4714e;
+}
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--primary-color);
+}
+body {
+  margin: 0;
+  padding: 3rem;
+  box-sizing: border-box;
+  background-color: var(--dark-color);
+}
+
+.container {
+  display: block;
+  margin: auto;
+  width: 1300px;
+}
+.active {
+  color: var(--dark-color) !important;
+}
+.upper {
+  text-transform: uppercase;
+}
+.center {
+  text-align: center;
+}
+.ml-heading {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+.s-heading {
+  font-size: 1.25rem;
+}
+/* main-navbar styling */
+#main-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#main-navbar #main-logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+#main-navbar .main-logo-img {
+  width: 8rem;
+}
+#main-navbar .main-logo-text {
+  margin-left: -2rem;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Ubuntu", sans-serif;
+  cursor: pointer;
+}
+#main-navbar #secondary-navbar ul {
+  display: flex;
+  list-style: none;
+}
+#main-navbar #secondary-navbar ul li a {
+  text-decoration: none;
+  color: var(--dark-primary-color);
+  font-size: large;
+  margin: 1rem;
+  letter-spacing: 1px;
+}
+#main-navbar #secondary-navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+/* showcase content styling */
+#showcase #showcase-content {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+#showcase #showcase-content #showcase-left .showcase-left-img {
+  align-self: flex-start;
+  padding: 2rem;
+  width: 300px;
+}
+#showcase #showcase-content #showcase-left .showcase-left-text {
+  position: absolute;
+  top: 15rem;
+  left: 100px;
+  text-transform: uppercase;
+  font-family: "Dancing Script", cursive;
+  font-size: 4rem;
+  letter-spacing: 2px;
+}
+#showcase #showcase-content #showcase-middle .showcase-main-img {
+  align-self: center;
+  padding: 1rem;
+  width: 500px;
+  z-index: 2;
+}
+#showcase #showcase-content #showcase-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+#showcase #showcase-content #showcase-right .showcase-right-upper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#showcase
+  #showcase-content
+  #showcase-right
+  .showcase-right-upper
+  .showcase-right-img {
+  width: 3rem;
+  margin: auto;
+}
+#showcase
+  #showcase-content
+  #showcase-right
+  .showcase-right-upper
+  .showcase-right-text {
+  text-align: center;
+  padding-top: 1rem;
+  width: 100px;
+}
+#showcase #showcase-content #showcase-right .showcase-right-lower {
+  padding-top: 5rem;
+}
+
+#amper {
+  font-size: 12rem;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 100;
+  line-height: 9rem;
+}
+
+#about .container {
+  display: flex;
+  justify-content: flex-start;
+}
+#about .container .about-info {
+  display: flex;
+  width: 50vw;
+  align-items: center;
+}
+#about .about-info .about-info-img {
+  width: 300px;
+}
+#about .about-info .about-info-link {
+  list-style: none;
+  margin-left: 2rem;
+  font-size: 1.75rem;
+}
+#about .about-info .about-info-link li {
+  border-bottom: 2px solid var(--dark-light-primary-color);
+  padding: 0.5rem 0;
+}
+#about .about-info .about-info-link a {
+  text-decoration: none;
+  color: var(--dark-color);
+}
+#about .about-text {
+  text-transform: uppercase;
+  font-family: "Dancing Script", cursive;
+  font-size: 4rem;
+  letter-spacing: 2px;
+  text-align: end;
+}
+#subscription {
+  padding: 2rem 0;
+}
+#subscription .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#subscription .sub-link input:focus {
+  outline: none;
+}
+#subscription .sub-link {
+  display: flex;
+  align-items: flex-end;
+  margin: 2rem 0;
+}
+#subscription .sub-link .sub-text {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  width: 30vw;
+  margin-right: 5rem;
+}
+#subscription .sub-link .sub-btn {
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  background-color: var(--dark-color);
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+#subscription .sub-link .sub-btn:hover {
+  background-color: var(--dark-light-primary-color);
+}
+
+#copy {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  font-size: 20px;
+}
+#copy span {
+  color: var(--dark-primary-color);
+}
